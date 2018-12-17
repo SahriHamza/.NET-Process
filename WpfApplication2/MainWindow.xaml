@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        Closing="DataWindow_Closing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="508" Width="712">
+    <Grid Margin="-37,0,-447,-170" RenderTransformOrigin="0.563,0.584">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1187*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="Threads" HorizontalAlignment="Left" Height="17" VerticalAlignment="Top" Width="697" Margin="38,0,0,0" RenderTransformOrigin="0.5,0.5">
+            <Menu.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.11"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Menu.RenderTransform>
+            <MenuItem x:Name="StartMenu" Header="Threads" Margin="0" Background="#FFFBC4C4">
+                <MenuItem Header="Ballon" HorizontalAlignment="center" Width="85" Click="BallonThread_Click"/>
+                <MenuItem Header="Premier" HorizontalAlignment="center" Width="85" Click="PremierThread_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="Pause" Header="Pause/Reload" Margin="0" Width ="80" Background="#FFFBC4C4">
+            </MenuItem>
+            <MenuItem x:Name="CloseMenu" Header="Close" Margin="0" Background="#FFFBC4C4">
+                <MenuItem Header="Close all Threads" HorizontalAlignment="left" Width="160" Click="closeAllThreads"/>
+                <MenuItem Header="Close last Thread" HorizontalAlignment="left" Width="160" Click="CloseLastThread"/>
+                <MenuItem Header="Close last Ballon Thread" HorizontalAlignment="left" Width="160" Click="CloseLastBalon"/>
+                <MenuItem Header="Close last Premier Thread" HorizontalAlignment="left" Width="160" Click="CloseLastPremier"/>
+            </MenuItem>
+            <MenuItem x:Name="Quit" Header="Quit" Margin="0"  Background="#FFFBC4C4" Click="Quit_Click">
+                </MenuItem>
+        </Menu>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="center" Height="105" Margin="70,65,482,0" Stroke="Black" VerticalAlignment="Top" Width="635"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="center" Margin="239,105,552,0" TextWrapping="Wrap" Text="No Running 'Ballons' Threads" VerticalAlignment="Top" Height="25" Width="396" Foreground="#FFFF2828" FontSize="16"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="center" Height="125" Margin="70,240,482,0" Stroke="Black" VerticalAlignment="Top" Width="635"/>
+        <TextBlock x:Name="textBlock_Premier" HorizontalAlignment="center" Margin="239,285,552,0" TextWrapping="Wrap" Text="No Running 'Premiers' Threads" VerticalAlignment="Top" Height="25" Width="396" Foreground="#FFFF2828" FontSize="16"/>
+
+    </Grid>
+</Window>

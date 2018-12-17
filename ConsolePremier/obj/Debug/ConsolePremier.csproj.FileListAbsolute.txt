@@ -1,0 +1,5 @@
+C:\Users\hamza\Documents\Visual Studio 2015\Projects\WpfApplication2\ConsolePremier\bin\Debug\ConsolePremier.dll
+C:\Users\hamza\Documents\Visual Studio 2015\Projects\WpfApplication2\ConsolePremier\bin\Debug\ConsolePremier.pdb
+C:\Users\hamza\Documents\Visual Studio 2015\Projects\WpfApplication2\ConsolePremier\obj\Debug\ConsolePremier.csprojResolveAssemblyReference.cache
+C:\Users\hamza\Documents\Visual Studio 2015\Projects\WpfApplication2\ConsolePremier\obj\Debug\ConsolePremier.dll
+C:\Users\hamza\Documents\Visual Studio 2015\Projects\WpfApplication2\ConsolePremier\obj\Debug\ConsolePremier.pdb
